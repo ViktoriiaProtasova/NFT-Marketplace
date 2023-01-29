@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <a href="#" class="logo"><strong>Nft</strong></a>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#">Abouts us</a></li>
+        <li><a class="nav-link" href="#">Place bit</a></li>
+      </ul>
+      <button class="nav-button" type="button">Sing in</button>
+    </header>
+    <hr />
+    <main>
+      <section class="section hero-section">
+        <div class="hero-wrapper">
+          <div class="hero-content-wrapper">
+            <div class="hero-title-wrapper">
+              <h1 class="hero-title">
+                Create and sell
+                <span class="hero-title-accent">NFTS</span> without fees
+              </h1>
+              <p class="hero-text">
+                Art is short for artificial…so the art of art is to be as real
+                as you can within this artificial situation. In a way it’s a lie
+                to get you to see the truth.
+              </p>
+            </div>
+            <div class="hero-links-wrapper">
+              <button type="button" class="hero-button">Get collection</button>
+              <svg class="hero-button-icon">
+                <use href="./images/icons.svg#icon-vector-1"></use>
+              </svg>
+              <a
+                class="play-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                <svg class="play-icon">
+                  <use href="./images/icons.svg#icon-polygon-1"></use>
+                </svg>
+              </a>
+              <a
+                class="watch"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                ><em>Watch videos</em></a
+              >
+            </div>
+          </div>
+          <img
+            src="./images/img.png"
+            alt="Art images"
+            width="746"
+            height="695"
+          />
+        </div>
+      </section>
+      <section class="section gallery-section">
+        <div class="container">
+          <h2 class="subtitle">Most treading action:</h2>
+          <p class="subtitle-text">
+            Art is short for artificial…so the art of art is to be as real
+            <br />
+            as you can within this artificial situation
+          </p>
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <a
+                href="#"
+                class="gallery-link"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                ><img
+                  class="gallery-img"
+                  src="./images/group75.png"
+                  alt="Examples of NFT art"
+              /></a>
+            </li>
+            <li class="gallery-item">
+              <a
+                href="#"
+                class="gallery-link"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                ><img
+                  class="gallery-img"
+                  src="./images/group76.png"
+                  alt="Examples of NFT art"
+              /></a>
+            </li>
+            <li class="gallery-item">
+              <a
+                href="#"
+                class="gallery-link"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                ><img
+                  class="gallery-img"
+                  src="./images/group77.png"
+                  alt="Examples of NFT art"
+              /></a>
+            </li>
+            <li class="gallery-item">
+              <a
+                href="#"
+                class="gallery-link"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                ><img
+                  class="gallery-img"
+                  src="./images/group78.png"
+                  alt="Examples of NFT art"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="autor-text">
+        This page was built by
+        <a
+          class="autor-link"
+          href="https://www.linkedin.com/in/viktoriiaprotasova/"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          ><em>Viktoriia Protasova</em></a
+        >
+      </p>
+    </footer>
+    <script>
+      function singIn() {
+        let login = prompt("Text your login");
+        let password = prompt("Text your password");
+
+        if (login.length > 0 && password.length > 0) {
+          alert(`Welcome to NFT Marketplace!👋`);
+        }
+      }
+      function get() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let favor = prompt("What is your favorite NFT art?");
+
+        if (name.length > 0) {
+          alert(
+            `Thank you, ${name}!👋 We'll be in touch by email, meanwhile have lot of ${favor}!`
+          );
+        }
+      }
+      let navButton = document.querySelector(".nav-button");
+      navButton.addEventListener("click", singIn);
+      let heroButton = document.querySelector(".hero-button");
+      heroButton.addEventListener("click", get);
+    </script>
+  </body>
+</html>
