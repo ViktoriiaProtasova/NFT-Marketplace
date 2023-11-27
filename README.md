@@ -10,3 +10,5 @@ Created the page markup according to the design layout.
 
 - HTML5
 - CSS
+
+  <img alt="screenshot-1" src="./screenshot-1"/>
